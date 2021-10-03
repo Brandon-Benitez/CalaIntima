@@ -67,34 +67,83 @@ body {
 
 /* main index*/
 
+.img_principal {
+    text-align: center;
+}
+
+.img_principal img {
+    height: 300px;
+    width: 800px;
+    padding: 15px;
+}
+
+.img_secundaria{
+    text-align: center;
+}
+
+.img_secundaria img{
+    height: 250px;
+    width: 350px;
+    padding: 35px;
+}
+
+.pie_index{
+    margin-top: 50px;
+    text-align: center ;
+}
+
+section .img_secundaria{
+    display: inline-block;
+}
+
 .titulo-principales{
     text-align: center;
     color: brown;
     margin: 20px;
 }
 
-/* Slider index */
+/* main fotos movimiento */
 
-.container-slider {
-    width: 90%;
+.article-slider{
+    margin-top: 30px;
+}
+
+.slider{
+    width: 95%;
     margin: auto;
+    overflow: hidden;
 }
 
-/* section envio cambio metodo de pago */
-
-.container-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    grid-gap: 20px;
-    text-align: center;
-    margin: 25px;
-    
+.slider ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
 }
 
-.items a{
-    display:block;
-    text-decoration: none;
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 106%;
+    height: 80%;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
 }
 
 /*fotos galeria index */
@@ -152,7 +201,6 @@ div iframe {
 .lista-envios{
     text-align: center;
     margin-top: 15px;
-    padding: 0px 60px;
 }
 
 .caja img{
@@ -244,114 +292,28 @@ form {
 
 /* footer*/
 
-footer{
-    width: 100%;
-    background: #696969;
-    color: white;
-    margin-top: 30px;
+footer {
+    background-image: linear-gradient(rgb(253, 230, 234), violet);
+    color:brown;
+    text-align: center;
+    margin-top: 80px; 
 }
 
-.container-footer-all{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px;
 
-}
-.container-body{
-    display: flex;
-    justify-content: space-between;
-}
-.colum1{
-    max-width: 400px;
+footer div .foto_redes img{
+    height: 50px;
+    width: 50px;
 }
 
-.colum1 h2{
-    font-size: 22px;
-}
-.colum1 p{
-    font-size: 14px;
-    color: #c7c7c7;
-    margin-top: 20px;
+footer .Container-footer{
+    display: inline-block;
 }
 
-.colum2{
-    max-width: 400px;
+.Container-footer .texto-footer {
+    margin: 40px;
+    padding-left: 40px;
 }
 
-.colum2 h2{
-    font-size: 22px;
-}
-
-.colum2 .row a{
-    display: flex;
-    justify-content: left;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.colum2 .row img{
-    width: 36px;
-    height: 36px;
-}
-
-.row h6{
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #c7c7c7;
-}
-
-.colum3{
-    max-width: 400px;
-}
-
-.colum3 h2{
-    font-size: 22px;
-}
-
-.row2{
-    margin-top: 20px;
-
-}
-
-.row2 img{
-    width: 36px;
-    height: 36px;
-
-}
-
-.row2 h6{
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 140px;
-}
-
-.container-footer{
-    width: 100%;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.footer{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.copyright{
-    color: #c7c7c7;
-}
-.copyright a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.information a{
-    text-decoration: none;
-    color: #c7c7c7;
+.Container-footer .texto-footer p{
+    margin: 5px;
 }
