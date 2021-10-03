@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,9 @@
 
     <header id="header">
         <div class="logo">
-            <a href="./index.html"><img src="./fotos/logo/cala intima1.jpg" alt="Cala Intima"></a>
+            <div data-aos="zoom-out">
+                <a href="./index.html"><img src="./fotos/logo/cala intima1.jpg" alt="Cala Intima"></a>
+            </div>
         </div>
         <nav class="menu">
             <ul>
@@ -33,40 +36,60 @@
 <!-- ##### Final Header ##### -->
 <!-- ##### Comienzo Main Index ##### -->
 
-    <main>
+<main>
 <!-- ##### Comienzo Section slider ##### -->
 
-        <section>
-            <div>
-                <h1 class="titulo-principales">¡¡GRANDES REBAJAS!!</h1>
+<div class="container-slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./fotos/fotos index/1xmayor index.png" class="d-block w-100" alt="...">
             </div>
-            <article class="article-slider">
-                <div class="slider">
-                    <ul> 
-                        <li><img src="./fotos/fotos movimiento/titulo1.png" alt="1 foto de promo"></li>
-                        <li><img src="./fotos/fotos movimiento/titulo2.png" alt="2 foto de promo"></li>
-                        <li><img src="./fotos/fotos movimiento/titulo3.png" alt="3 foto de promo"></li>
-                        <li><img src="./fotos/fotos movimiento/titulo4.png" alt="4 foto de promo"></li>
-                    </ul>
-                </div>        
-            </article>
-        </section>
+            <div class="carousel-item">
+                <img src="./fotos/fotos index/foto descuento index.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./fotos/fotos index/Captura3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div> 
+</div>
 
 <!-- ##### Final Section slider ##### -->
 <!-- ##### Comienzo Section descuentos ##### -->
+<div class="container-items">
+    <div class="items">
+        <a href="./paginas/Envios.html">
+            <img src="./fotos/iconos/camion.PNG" alt="camion">
+            <h5>ENVIOS</h5>
+            <h6>Entregas a todo el pais</h6>
+        </a> 
+    </div>
+    <div class="items">
+        <a href="./paginas/Contactos.html">
+            <img src="./fotos/iconos/giro.PNG" alt="camion"> 
+            <h5>POLITICAS DE CAMBIO</h5>
+            <h6>Cambios o devoluciones</h6>
+        </a>
+    </div>
+</div>
 
-        <section>
-            <div class="img_principal">
-                <img src="./fotos/fotos index/1xmayor index.png" alt="foto descuento">
-            </div>
-            <div class="img_principal">
-                <img src="./fotos/fotos index/Captura.PNG" alt="foto descuento">
-                <h2 class="titulo-principales">¡ELEGÍ, PAGA Y RECIBÍ TU PEDIDO SIN MOVERTE DE TU CASA!</h2>
-            </div>
-            <div class="img_principal">
-                <img src="./fotos/fotos index/foto descuento index.png" alt="foto descuento">
-            </div>
-        </section>
+<div class="titulo-envios">
+    <h1>¡ELEGÍ, PAGA Y RECIBÍ TU PEDIDO SIN MOVERTE DE TU CASA!</h1>
+</div>
 
 <!-- ##### Final Section descuentos ##### -->
 <!-- ##### Comienzo Section Galeria ##### -->
@@ -116,6 +139,49 @@
                 
                         <h4 class="gallery-tittle">#008</h4>
                 </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria1.jpg" alt="producto">
+                    <div class="gallery-tittle">
+                        <h4 >#001</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria2.jpeg" alt="producto">
+                    <h4 class="gallery-tittle">#002</h4>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria3.jpg" alt="producto">
+                    <div class="gallery-tittle">
+                        <h4>#003</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria4.jpg" alt="producto">
+                    <div class="gallery-tittle">
+                        <h4>#004</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria5.jpg" alt="producto">
+                    <div class="gallery-tittle">
+                        <h4>#005</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria6.jpg" alt="producto">
+                    <div class="gallery-tittle">
+                        <h4>#006</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria7.jpg" alt="producto">
+                    <h4 class="gallery-tittle">#007</h4>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="../fotos/fotos galeria/galeria8.jpg" alt="producto">
+                
+                        <h4 class="gallery-tittle">#008</h4>
+                </div>
             </div>
         </section>
 
@@ -125,23 +191,95 @@
 <!-- ##### Final Main Index ##### -->
 <!-- ##### Comienzo Footer ##### -->
 
-    <footer>
-        <div>
-            <div class="Container-footer">
-                <div class="texto-footer">
-                    <h2>Contactanos</h2>
-                    <p>Whatsapp: 1112131415</p> 
-                    <p> <strong> Cala.intima@gmail.com</strong></p>
+<footer>
+    <div class="container-footer-all">
+
+        <div class="container-body">
+                <div class="colum1">
+                    <h2>Medios de pago</h2>
+                    <br>
+                    <div class="mediosDePago">
+                            <img src="./fotos/imgmediosdepago/visa.png">    
+                            <img src="./fotos/imgmediosdepago/tarjeta-naranja.png">
+                            <img src="./fotos/imgmediosdepago/mercadopago.png">
+                            <img src="./fotos/imgmediosdepago/mastercard.png">
+                            <img src="./fotos/imgmediosdepago/amex.png">
+                            <img src="./fotos/imgmediosdepago/banelco.png">
+                    </div>
+                </div>
+    
+            <div class="colum2">
+
+                <h2>redes sociales</h2>
+
+                <div class="row">
+                    <a href="https://www.instagram.com/calaintima/">
+                        <img src="./fotos/imgfooter/iconofacebook.png" alt="facebook">
+                        <h6>seguinos en facebook</h6>
+                    </a>
+                    
+                </div>
+
+                <div class="row">
+                    <a title="Instagram Cala" href="https://www.instagram.com/calaintima/">
+                        <img src="./fotos/imgfooter/iconoinstagram.png" >
+                        <h6>seguinos en Instagram</h6>  
+                    </a>
+                </div>
+                <div class="row">
+                    <a title="Instagram Cala" href="https://www.instagram.com/calaintima/">
+                        <img src="./fotos/imgfooter/iconotwitter.png" >
+                        <h6>seguinos en twitter</h6>  
+                    </a>
+                </div>
+                <div class="row">
+                    <a title="Instagram Cala" href="https://www.instagram.com/calaintima/">
+                        <img src="./fotos/imgfooter/iconowhasapp.png" >
+                        <h6>Tambien podes hacer tu pedido por Whatsapp</h6>  
+                    </a>
                 </div>
             </div>
-            <div class="Container-footer">
-                <a class="foto_redes" title="Instagram cala" href="https://www.instagram.com/calaintima/"><img src="./fotos/redes sociales/instagram.png" alt="Instagram cala" /></a>
-                <h5>¡Seguinos en instagram!</h5>
-            </div>
-        </div>   
-    </footer>
 
+            <div class="colum3">
+                <h2>Información contactos</h2>
+                <div class="row2">
+                    <img src="./fotos/imgfooter/iconocasa.png   " >
+                    <label >av. Lacarra 1100</label>
+                </div>
+                <div class="row2">
+                    <img src="./fotos/imgfooter/icontelefono.png" >
+                    <label >+123456789</label>
+                </div>
+                <div class="row2">
+                    <img src="./fotos/imgfooter/iconogmail.png" >
+                    <label >cala.intima@gmail.com</label>
+                </div>
+            </div>
+                
+           
+
+        </div>
+    </div>
+    <div class="container-footer">
+        <div class="footer">
+            <div class="copyright">
+                Copyright Unibow Store - 2021. Todos los derechos reservados. Defensa de las y los consumidores. <a href=""> Para reclamos ingrese aquí</a>
+            </div>
+            <div class="information">
+                <a href="">informacion compañia</a>
+                <a href="">privacidad y politica</a>
+                <a href="">terminos y condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- ##### Final Footer ##### -->
+
+<!-- ##### Bandel y separate ##### -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 </html>
